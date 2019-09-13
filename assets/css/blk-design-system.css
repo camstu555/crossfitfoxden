@@ -16133,9 +16133,9 @@ code {
 .input-group-focus .input-group-prepend .input-group-text,
 .input-group-focus .input-group-append .input-group-text {
   background-color: #ffffff;
-  border-color: #e14eca;
+  border-color: #176af5;
   background-color: transparent;
-  border-color: #e14eca;
+  border-color: #176af5;
 }
 
 .input-group-focus.no-border .input-group-prepend .input-group-text,
@@ -16205,17 +16205,14 @@ textarea.form-control {
   max-height: 80px;
   padding: 10px 10px 0 0;
   resize: none;
-  border: none;
-  border-bottom: 1px solid #2b3553;
+  border: 1px solid #2b3553;
   border-radius: 0;
   line-height: 2;
 }
 
 textarea.form-control:focus,
 textarea.form-control:active {
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  border: 1px solid #176af5;
 }
 
 .has-success.form-group .form-control,
