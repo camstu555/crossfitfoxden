@@ -69,7 +69,7 @@
                     <a class="nav-link" href="#">New to CrossFit</a>
                   </li><li class="nav-item">
                       <a class="nav-link" href="#">Schedule</a>
-                      <a class="btn btn-info" role ="button" href="#contact"><i class="tim-icons icon-email-85"></i> Contact Us!</a>
+                      <button class="btn btn-info" data-toggle="modal" data-target="#myModal2"><i class="tim-icons icon-email-85"></i> Contact Us!</a>
 
                      
                           </div>
@@ -252,8 +252,68 @@
       </div>
     </div>
   </div>
-
-     
+<!-- start modal -->
+<div class="modal fade modal-black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="wrapper">
+              <div class="main">
+          <div class="container">
+              <div class="justify-content-right">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="tim-icons icon-simple-remove text-white"></i>
+                  </button>
+                </div>
+              
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                  <h2>Start your free 7-Day Trial Today!</h2>
+                </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-12">
+                            <form action="https://formspree.io/stew.cameron@gmail.com" method="POST" /> 
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                              </div>
+                              <input type="text" class="form-control form-control-lg" placeholder="Full Name" name="Name">
+                            </div>
+        
+                      
+                         
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="tim-icons icon-email-85"></i></span>
+                                </div>
+                                <input type="text" class="form-control form-control-lg" placeholder="E-mail" name="E-mail">
+                              </div>
+                          
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="tim-icons icon-mobile"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control form-control-lg" placeholder="Phone Number" name="Phone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" name="Questions?" placeholder="How can we help you!"></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-info btn-round btn-lg float-right" rel="tooltip" data-original-title="Thanks for the message" data-placement="left">Submit <i class="tim-icons icon-send"></i></i></button>
+                                  <br>
+                                  <br><br>
+                                  <br>
+                                </form>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End Modal-->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -346,6 +406,11 @@
       }
     }
   </script>
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal2').modal('show');
+    });
+</script>
 </body>
 
 </html>

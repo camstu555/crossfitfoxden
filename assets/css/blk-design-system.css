@@ -13614,8 +13614,9 @@ img {
 }
 
 .modal.modal-black .modal-content {
-  background: #1f2251;
+  background: #000000f0;
   color: rgba(255, 255, 255, 0.8);
+}
 }
 
 .modal.modal-black .modal-content .modal-header .modal-title,
